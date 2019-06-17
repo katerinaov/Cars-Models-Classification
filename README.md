@@ -37,7 +37,7 @@ I tried different parameters and types of image transformations, but come up wit
 
 # How to test
 
-I uploaded only 1 models with the second best results(resnext50_93.4.pth). To test the first place model, you'll need to download this model from [here](https://drive.google.com/open?id=1--BqZCxQog_6mpVjNIu0QS-tY944OL-S93)
+To test the model, you'll need to download this model from [here](https://drive.google.com/open?id=1--BqZCxQog_6mpVjNIu0QS-tY944OL-S93)
 
 There 2 ways to test my model:
 * by testing only one image (get predicted class and confidence)
@@ -68,7 +68,7 @@ $ python3 test_one_image.py --image_fname 00001.jpg
 $ python3 test.py --labels_fname test_labels.csv --device cpu --bboxes True
 ```
 Here you can choose whether you want to run the script using cuda or cpu.
-Also you need to add whether you're providing bounding boxes for images in the test_labels file, which can be in .mat or .csv format.
+Also you need to add whether you're providing bounding boxes for images in the test_labels file(it's just example, you'll need to change a name of a file), which can be in .mat or .csv format.
 
 # Requirements
 
