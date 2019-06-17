@@ -28,10 +28,10 @@ I tried different parameters and types of image transformations, but come up wit
 | ------ | ------ |------ |
 |ResNet34| pytorch| 87.88 |
 |ResNet101|albumenatations | 93.07|
-|ResNet101| pytorch| 90.7|
+|ResNet101| pytorch| 90.70|
 |ResNet152|albumenatations | 92.67 |
-|Densenet121| albumenatations|89.7 |
-|Densenet201|albumenatations |87.5 |
+|Densenet121| albumenatations|89.71 |
+|Densenet201|albumenatations |87.53 |
 |ResNext50_32x4d|albumenatations |93.39|
 |ResNext100_32x8d|albumenatations |94.81|
 
