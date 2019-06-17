@@ -47,7 +47,7 @@ def get_dataframe(file_name):
 def create_dataloder(labels_file, bboxes):
 
     data_transforms_test = transforms.Compose([
-    transforms.Resize((500, 500)),
+    transforms.Resize((400, 400)),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406],
                          std=[0.229, 0.224, 0.225])
@@ -81,7 +81,7 @@ def load_model(model_file, device):
 
     # device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     # print(device)
-    model_ft = models.resnext50_32x4d(pretrained=True) 
+    model_ft = models.resnext101_32x8d(pretrained=True) 
     model_ft.fc = torch.nn.Linear(model_ft.fc.in_features, 196)
     
     if device=='cpu':
@@ -98,7 +98,7 @@ def main(args):
     test_loader = create_dataloder(args.labels_fname, args.bboxes)
 
     cwd = os.getcwd()
-    model=load_model(cwd+'/resnext50_93.4.pth', args.device)
+    model=load_model(cwd+'/resnext101_94.8.pth', args.device)
     model.eval()
 
     test_set_accuracy(model,test_loader)

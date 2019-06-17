@@ -58,7 +58,7 @@ def img_plot(image):
 def predict_one_image(model,img_fname):
 
     data_transforms_test = transforms.Compose([
-    transforms.Resize((500, 500)),
+    transforms.Resize((400, 400)),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406],
                          std=[0.229, 0.224, 0.225])
@@ -86,7 +86,7 @@ def predict_one_image(model,img_fname):
 def main(args):
 
     cwd = os.getcwd()
-    model=load_model(cwd+'/resnext50_93.4.pth', 'cpu')
+    model=load_model(cwd+'/resnext101_94.8.pth', 'cpu')
     model.eval()
 
     predict_one_image(model,cwd+"/"+args.image_fname)
