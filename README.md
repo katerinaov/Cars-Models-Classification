@@ -35,7 +35,7 @@ I tried different parameters and types of image transformations, but come up wit
 |ResNext50_32x4d|albumenatations |93.39|
 |ResNext100_32x8d|albumenatations |94.81|
 
-Check the code [here](https://github.com/katerinaov/Cars-Models-Classification/blob/master/cars_classifier.ipynb)
+Check the code [here](https://nbviewer.jupyter.org/github/katerinaov/Cars-Models-Classification/blob/master/cars_classifier.ipynb)
 
 # How to test
 
