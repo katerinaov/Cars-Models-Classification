@@ -35,6 +35,8 @@ I tried different parameters and types of image transformations, but come up wit
 |ResNext50_32x4d|albumenatations |93.39|
 |ResNext100_32x8d|albumenatations |94.81|
 
+Check the code [here](https://github.com/katerinaov/Cars-Models-Classification/blob/master/cars_classifier.ipynb)
+
 # How to test
 
 To test the model, you'll need to download this model from [here](https://drive.google.com/open?id=1--BqZCxQog_6mpVjNIu0QS-tY944OL-S93)
